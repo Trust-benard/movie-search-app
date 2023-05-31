@@ -67,13 +67,13 @@ form button:active {
 }
 
 .image-container {
-    -webkit-clip-path: circle(90% at 30px 30px);
-    clip-path: circle(90% at 30px 30px);
-    flex: 4;
+    /* -webkit-clip-path: circle(90% at 30px 30px);
+    /* clip-path: circle(90% at 30px 30px); */
+    flex: 3; 
 }
 
 .bg-image {
-    background-size: cover;
+    background-size: ;
     background-repeat: no-repeat;
     background-position: top left;
     width: 100%;
@@ -111,12 +111,14 @@ form button:active {
 .movie-info p {
     font-size: 14px;
     margin: 10px 0;
-    width: 130%;
+    width: 100%;
+    text-align: justify;
+    padding-left: 20px;
 }
 
 .movie-info .tags-container {
     position: relative;
-    width: 225%;
+    width: 100%;
 }
 
 .movie-info .tags-container span {
@@ -128,58 +130,21 @@ form button:active {
     margin: 5px;
 }
 
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 2;
-}
 
-footer p {
-    margin: 10px 0;
-}
 
-footer i {
-    color: red;
-}
 
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
+@media (min-width: 600px) {
+   
     .image-container {
-        flex: 5;
-    }
-}
-
-@media (max-width: 700px) {
-    .image-container {
-        -webkit-clip-path: circle(80% at 45px 70px);
-        clip-path: circle(80% at 45px 70px);
-    }
-}
-
-@media (max-width: 600px) {
-    .movie-card-container {
-        flex-direction: column;
+         clip-path: none;
+         flex: 3; 
+      
     }
 
-    .image-container {
-        clip-path: none;
-        flex: 1;
-        height: 400px;
-    }
-
+    
     .movie-info {
         align-items: flex-start;
-        flex: 1;
+        flex: 3;
         text-align: left;
         padding: 30px 20px;
     }

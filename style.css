@@ -133,24 +133,26 @@ form button:active {
 
 
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
    
-    .image-container {
-         clip-path: none;
-         flex: 3; 
-      
+    .movie-card-container {
+        flex-direction: column;
     }
 
-    
+    .image-container {
+        clip-path: none;
+        flex: 1;
+        height: 400px;
+    }
+
     .movie-info {
         align-items: flex-start;
-        flex: 3;
+        flex: 1;
         text-align: left;
         padding: 30px 20px;
     }
 
     .movie-info .tags-container,
     .movie-info p {
-        width: 100%;
-    }
+        width: 1
 }
